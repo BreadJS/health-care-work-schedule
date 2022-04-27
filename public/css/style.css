@@ -178,3 +178,7 @@ main {
   padding-top: 4px;
   padding-left: 7px;
 }
+
+.bg-currentDay {
+  background-color:#34393c!important;
+}
