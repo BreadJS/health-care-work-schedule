@@ -66,7 +66,7 @@ async function getCustomScheduleAPI(year, week) {
       const row = scheduleTable.insertRow();
 
       const dayRef = row.insertCell();
-      dayRef.innerHTML = `<span class="badge bg-secondary${(new Date().getDate() == date.getDate() ? ' bg-currentDay': '')}" style="line-height: 14px;">${currentDay}</span>`;
+      dayRef.innerHTML = `<span class="badge bg-secondary${(new Date().getDate() == date.getDate() && (new Date().getMonth()+1) == (date.getMonth()+1) ? ' bg-currentDay': '')}" style="line-height: 14px;">${currentDay}</span>`;
 
       const earlyRef = row.insertCell();
       earlyRef.innerHTML = `<span class="badge bg-secondary${(nameClasses[data[day][0]] == undefined ? '' : ` ${nameClasses[data[day][0]]}" onclick="showWorker('${data[day][0].toLowerCase()}')`)}">${(data[day][0] == undefined ? '-' : data[day][0])}</span>`;
@@ -138,7 +138,7 @@ async function main() {
       const row = scheduleTable.insertRow();
 
       const dayRef = row.insertCell();
-      dayRef.innerHTML = `<span class="badge bg-secondary${(new Date().getDate() == date.getDate() ? ' bg-currentDay': '')}" style="line-height: 14px;">${currentDay}</span>`;
+      dayRef.innerHTML = `<span class="badge bg-secondary${(new Date().getDate() == date.getDate() && (new Date().getMonth()+1) == (date.getMonth()+1) ? ' bg-currentDay': '')}" style="line-height: 14px;">${currentDay}</span>`;
 
       const earlyRef = row.insertCell();
       earlyRef.innerHTML = `<span class="badge bg-secondary${(nameClasses[data[day][0]] == undefined ? '' : ` ${nameClasses[data[day][0]]}" onclick="showWorker('${data[day][0].toLowerCase()}')`)}">${(data[day][0] == undefined ? '-' : data[day][0])}</span>`;
