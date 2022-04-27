@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <title>Werk Schema</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.png"> Werk Schema</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <div class="row">
+      <div class="col-12">
+
+        <div class="card">
+          <div class="card-header">
+            Schema (<span id="currentSchedule">-</span>) <div class="backForwardBtn" onclick="changeSchedule(scheduleYear, scheduleWeek, 'back')"><i class="fas fa-angle-left"></i></div><div class="backForwardBtn ms-1" onclick="changeSchedule(scheduleYear, scheduleWeek, 'next')"><i class="fas fa-angle-right"></i></div>
+          </div>
+          <div class="card-body scheduleCard">
+            
+            <table class="table scheduleTable" id="scheduleTable">
+              <thead>
+                <tr>
+                  <th><span class="badge bg-secondary">Dag</span></th>
+                  <th><span class="badge bg-secondary">Vroeg</span></th>
+                  <th><span class="badge bg-secondary">Tussen</span></th>
+                  <th><span class="badge bg-secondary">Late</span></th>
+                  <th><span class="badge bg-secondary">PB</span></th>
+                  <th><span class="badge bg-secondary">Nacht</span></th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+</body>
+</html>

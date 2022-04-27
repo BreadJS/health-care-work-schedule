@@ -1,0 +1,180 @@
+body {
+  background-color:#121212;
+  color:#fff;
+}
+
+main {
+  margin-top: 75px;
+}
+
+.navbar-brand img {
+  height: 29px;
+  margin-bottom: -8px;
+  margin-top: -12px;
+}
+
+.navbar-bg-dark {
+  background-color:#1F1F1F;
+}
+
+.card {
+  background-color:#1E1E1E;
+}
+
+.card .card-header {
+  font-weight:bold;
+  color:#efefef;
+  background-color:#1a1a1a;
+}
+
+.card .card-body {
+  color:#ffffff;
+}
+
+.scheduleCard {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.scheduleTable tbody tr td,
+.scheduleTable thead tr th {
+  color:#fff;
+  border-bottom-width: 0px;
+  font-size:14px;
+}
+
+.scheduleTable tbody tr td span,
+.scheduleTable thead tr th span {
+  width:100%;
+  height:50px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.scheduleTable thead tr th span {
+  height:auto;
+  background-color:#34393c!important;
+}
+
+.workerColor1 {
+  background-color:#6847C2!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor1:hover {
+  background-color:#5638A8!important;
+}
+
+
+
+.workerColor2 {
+  background-color:#9843C7!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor2:hover {
+  background-color:#8234AD!important;
+}
+
+
+
+.workerColor3 {
+  background-color:#C247BC!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor3:hover {
+  background-color:#A838A3!important;
+}
+
+
+
+.workerColor4 {
+  background-color:#C27047!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor4:hover {
+  background-color:#A85E38!important;
+}
+
+
+
+.workerColor5 {
+  background-color:#BDC149!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor5:hover {
+  background-color:#A4A739!important;
+}
+
+
+
+.workerColor6 {
+  background-color:#87CB52!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor6:hover {
+  background-color:#72BC38!important;
+}
+
+
+
+.workerColor7 {
+  background-color:#82D9A5!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor7:hover {
+  background-color:#63CF8E!important;
+}
+
+
+
+.workerColor8 {
+  background-color:#61ADC7!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor8:hover {
+  background-color:#4AA2BF!important;
+}
+
+
+
+.workerColor9 {
+  background-color:#B5404B!important;
+  cursor:pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.workerColor9:hover {
+  background-color:#97353F!important;
+}
+
+
+.backForwardBtn {
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  background-color:#34393c;
+  font-size:11px;
+  display:inline-flex;
+  cursor:pointer;
+  position: relative;
+  top: -1px;
+  padding-top: 4px;
+  padding-left: 7px;
+}
